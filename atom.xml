@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qingy.me/"/>
-  <updated>2020-04-18T15:51:33.272Z</updated>
+  <updated>2020-04-21T03:40:16.552Z</updated>
   <id>https://qingy.me/</id>
   
   <author>
@@ -15,6 +15,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>windown系统hexo+Github搭建教程及模板（小学生都能做出来）！</title>
+    <link href="https://qingy.me/2020/04/20/article-title/"/>
+    <id>https://qingy.me/2020/04/20/article-title/</id>
+    <published>2020-04-20T14:05:02.000Z</published>
+    <updated>2020-04-21T03:40:16.552Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;阅读须知&quot;&gt;&lt;a href=&quot;#阅读须知&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="网站建设与优化" scheme="https://qingy.me/categories/%E7%BD%91%E7%AB%99%E5%BB%BA%E8%AE%BE%E4%B8%8E%E4%BC%98%E5%8C%96/"/>
+    
+    
+      <category term="hexo" scheme="https://qingy.me/tags/hexo/"/>
+    
+      <category term="github" scheme="https://qingy.me/tags/github/"/>
+    
+      <category term="博客" scheme="https://qingy.me/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+      <category term="coding" scheme="https://qingy.me/tags/coding/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>

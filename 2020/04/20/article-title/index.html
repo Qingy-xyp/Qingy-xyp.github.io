@@ -6,10 +6,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="留言板, Network Security Manages Engineer CCNA CCNP CCIE TCP/IP Qingy 安全">
+    <meta name="keywords" content="windown系统hexo+Github搭建教程及模板（小学生都能做出来）！, Network Security Manages Engineer CCNA CCNP CCIE TCP/IP Qingy 安全">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
-    <meta name="description" content="留言板 | Qingy">
+    <meta name="description" content="阅读须知
+
+注意，这篇文章篇幅较长，主要针对新手，每一步很详细，所以可能会显得比较啰嗦，所以建议基础比较好小伙伴根据目录选择自己感兴趣的部分跳着看，不要文章没看，上来先喷一下！谢谢⊙o⊙。教程内容随意复制使用，引用的话请加一个参考链接，谢谢">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +19,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>留言板 | Qingy</title>
+    <title>windown系统hexo+Github搭建教程及模板（小学生都能做出来）！ | Qingy</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -534,60 +536,284 @@
 </header>
 
         
-<div class="bg-cover pd-header about-cover">
-    <div class="container">
-    <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                <!-- 
-                    网络安全之路
-                 -->
-                
-                    留言板
-                
-            </div>
 
-            <div class="description center-align">
-                
-                    <!-- 路由交换 | TCP/IP簇 | 网络安全 -->
-                    <span id="jinrishici-sentence">正在加载今日诗词...</span>
-                
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        windown系统hexo+Github搭建教程及模板（小学生都能做出来）！
+                    </div>
+                </div>
             </div>
-            
-            
         </div>
     </div>
 </div>
-<script>
-// 每天切换 banner 图.  Switch banner image every day.
-$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
-</script>
 
 
-    </div>
-</div>
 
-<main class="content">
-    <div id="aboutme" class="container contact-container">
-            <div class="card">
-                    <div class="card-content">
-                            <div id="articleContent" data-aos="fade-up">
-                                    <h1 id="欢迎留言"><a href="#欢迎留言" class="headerlink" title="欢迎留言"></a>欢迎留言</h1><p>大家有任何问题，都可以在评论区给我留言。</p>
-<h1 id="友链交换"><a href="#友链交换" class="headerlink" title="友链交换"></a>友链交换</h1><p>想要交换友链的小伙伴，欢迎在评论区留言，留言格式：</p>
-<ul>
-<li><strong>名称：</strong>你的博客名称</li>
-<li><strong>地址：</strong>你的博客地址</li>
-<li><strong>简介：</strong>一句话简介</li>
-<li><strong>头像：</strong>你的头像地址</li>
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        
+<!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                    <div class="article-tag">
+                        
+                            <a href="/tags/hexo/" target="_blank">
+                                <span class="chip bg-color">hexo</span>
+                            </a>
+                        
+                            <a href="/tags/github/" target="_blank">
+                                <span class="chip bg-color">github</span>
+                            </a>
+                        
+                            <a href="/tags/博客/" target="_blank">
+                                <span class="chip bg-color">博客</span>
+                            </a>
+                        
+                            <a href="/tags/coding/" target="_blank">
+                                <span class="chip bg-color">coding</span>
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/网站建设与优化/" class="post-category" target="_blank">
+                                网站建设与优化
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2020-04-20
+                </div>
+
+                <div class="post-author info-break-policy">
+                    <i class="fa fa-user-o fa-fw"></i>作者:&nbsp;&nbsp;
+                    
+                        qingy
+                    
+                </div>
+
+                
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                        2.1k
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        7 分
+                    </div>
+                    
+                
+                
+                
+                        <span id="busuanzi_container_site_pv" style='display:none'></span>
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv" ></span>
+    
+                
+
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="阅读须知"><a href="#阅读须知" class="headerlink" title="阅读须知"></a>阅读须知</h2><hr>
+<blockquote>
+<p>注意，这篇文章篇幅较长，主要针对新手，每一步很详细，所以可能会显得比较啰嗦，所以建议基础比较好小伙伴根据目录选择自己感兴趣的部分跳着看，不要文章没看，上来先喷一下！谢谢⊙o⊙。<br>教程内容随意复制使用，引用的话请加一个参考链接，谢谢！</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><hr>
+<p>最近疫情期间真的很无聊，从过年到现在已经休息三个月了，游戏也打腻了，只能做个博客来消磨时间了，花了两天的时间把博客搭的差不多像个样子了，很多小伙伴应该也想过搭建一个自己的博客，网上也有一堆详细的教程。我在此稍稍总结一下具体的搭建步骤，另外网上很少有修改博客源码的个性化教程，我就稍稍分享一下我的一些修改经验，更多的个性化操作需要你自己以后去摸索。</p>
+<p>具体效果可以参观我的博客：<a href="https://qingy.me">qingy.me</a>，欢迎大家支持。</p>
+<p>我不是一个前端程序员，有些东西不是很了解，写的有问题或有改进的地方请大家指出。</p>
+<p>首先要了解一下我们搭建博客要用到的框架。Hexo是高效的静态站点生成框架，它基于Node.js。通过Hexo，你可以直接使用Markdown语法来撰写博客。相信很多小伙伴写工程都写过README.md文件吧，对，就是这个格式的！写完后只需两三条命令即可将生成的网页上传到你的github上，然后别人就可以看到你的网页啦。是不是很简单？你无需关心网页源代码的具体细节，你只需要用心写好你的博客内容就行。</p>
+<h4 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h4><ul>
+<li>安装Node.js</li>
+<li>添加国内镜像源</li>
+<li>安装Git</li>
+<li>注册Github账户</li>
+<li>安装Hexo</li>
+<li>连接Github与本地</li>
+<li>写文章、发布文章</li>
+<li>绑定域名</li>
 </ul>
-<p>例如我的网站友链，大家可以加到自己博客里哦：</p>
-<ul>
-<li><strong>名称：</strong>情谊影视</li>
-<li><strong>地址：</strong><a href="http://qingy.vip" target="_blank" rel="noopener">http://qingy.vip</a></li>
-<li><strong>简介：</strong>免费VIP电影，电视剧。</li>
-<li><strong>头像：</strong><a href="http://qingy.vip/template/mytheme/statics/image/20200111/55b72af6f.png" target="_blank" rel="noopener">http://qingy.vip/template/mytheme/statics/image/20200111/55b72af6f.png</a></li>
-</ul>
+<blockquote>
+<p>个性化的模板和添加分页我就不详细写了，网上有很多，我真的是懒得写~</p>
+</blockquote>
+<hr>
+<p><code>hexo</code>的初步搭建还有部署到<code>Github page</code>上，以及个人域名的绑定</p>
+<h2 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1.安装Node.js"></a>1.安装Node.js</h2><p>首先下载稳定版<a href="https://nodejs.org/dist/v9.11.1/node-v9.11.1-x64.msi" target="_blank" rel="noopener">Node.js</a>,我这里给的是64位的。<br>安装选项全部默认就可以，一路点击  <code>Next</code>。<br>最后安装好之后，按 <code>Win+R</code> 打开命令提示符，输入 <code>node -v</code>和 <code>npm -v</code>来验证是否成功（出现版本号）。</p>
+<h2 id="2-添加国内镜像源"><a href="#2-添加国内镜像源" class="headerlink" title="2.添加国内镜像源"></a>2.添加国内镜像源</h2><p>如果不会科学上网的话（其实很简单的，这里不做讲解，以后可能会更文章），可以使用阿里的国内镜像进行加速。</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp">npm config set registry https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>registry<span class="token punctuation">.</span>npm<span class="token punctuation">.</span>taobao<span class="token punctuation">.</span>org<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="3-安装Git"><a href="#3-安装Git" class="headerlink" title="3.安装Git"></a>3.安装Git</h2><p>为了把本地的网页文件上传到github上面去，我们需要用到分布式版本控制工具————Git<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">下载地址</a>。</p>
+<p>安装选项还是全部默认，只不过最后一步添加路径时选择<code>Use Git from the Windows Command Prompt</code>，这样我们就可以直接在命令提示符里打开git了。</p>
+<p>安装完成后在命令提示符中输入<code>git --version</code>验证是否安装成功。</p>
+<h2 id="4-安装Hexo"><a href="#4-安装Hexo" class="headerlink" title="4.安装Hexo"></a>4.安装Hexo</h2><p>在合适的地方新建一个文件夹，用来存放自己的博客文件，比如我的博客文件直接存放在桌面（<code>C:\qingy\desktop\boke</code>）目录下。</p>
+<p>在该目录下右键点击<code>Git Bash Here</code>，打开git的控制台窗口，以后我们所有的操作都在git控制台进行，就不要用Windows自带的控制台了。</p>
+<p>打开<code>Git Bash Here</code>后，输入<code>npm i hexo-cli -g</code>安装Hexo。会有几个报错，无视它就行。</p>
+<p>安装完后输入<code>hexo -v</code>验证是否安装成功。</p>
+<p>至此<code>hexo</code>就安装完了。</p>
+<p>然后就要初始化我们的网站，输入<code>hexo init</code>初始化文件夹，接着输入<code>npm install</code>安装必备的组件。</p>
+<p>这样本地的网站配置也弄好啦，输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>打开本地服务器，然后浏览器打开：<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>,就可以看到我们的博客初步搭建起来了，效果如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="1.png" alt=""></p>
+<p>按<code>ctrl+c</code>关闭本地服务。</p>
+<h2 id="5-注册Github"><a href="#5-注册Github" class="headerlink" title="5.注册Github"></a>5.注册Github</h2><p>接下来就去注册一个github账号，用来存放我们的网站。大多数小伙伴应该都有了吧，作为一个合格的程序猿（媛）还是要有一个的。</p>
+<p>打开<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a>，新建一个项目，如下所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="2.png" alt=""></p>
+<p>然后如下图所示，输入自己的项目名字，后面一定要加<code>.github.io</code>后缀，<code>README初始化</code>也要勾上。名称一定要和你的github名字完全一样，比如你github名字叫<code>abc</code>，那么仓库名字一定要是<code>abc.github.io</code>,如下图：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="3.png" alt=""></p>
+<h2 id="6-生成SSH链接到GitHub"><a href="#6-生成SSH链接到GitHub" class="headerlink" title="6.生成SSH链接到GitHub"></a>6.生成SSH链接到GitHub</h2><p>生成<code>SSH</code>添加到<code>GitHub</code>，连接<code>Github</code>与本地。<br>右键打开<code>git bash</code>，然后输入下面命令：</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp">git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>name <span class="token string">"yourname"</span>
+git config <span class="token operator">--</span>global user<span class="token punctuation">.</span>email <span class="token string">"youremail"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>这里的<code>yourname</code>输入你的<code>GitHub</code>用户名，<code>youremail</code>输入你<code>GitHub</code>的邮箱。这样<code>GitHub</code>才能知道你是不是对应它的账户。</p>
+<p>可以用以下两条，检查一下你有没有输对</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp">git config user<span class="token punctuation">.</span>name
+git config user<span class="token punctuation">.</span>email<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>然后生成密钥SSH key：</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp">ssh<span class="token operator">-</span>keygen <span class="token operator">-</span>t rsa <span class="token operator">-</span>C <span class="token string">"youremail"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<blockquote>
+<p>当输入完以上命令按回车后会有另外的提示，一路按回车就好了。</p>
+</blockquote>
+<blockquote>
+<p><code>ssh</code>，简单来讲就是一个非对称加密方式来实现安全传输，其中，<code>id_rsa</code>是你这台电脑的私人秘钥，不能给别人看的，<code>id_rsa.pub</code>是公共秘钥，可以随便给别人看。把这个公钥放在<code>GitHub</code>上，这样当你链接<code>GitHub</code>自己的账户时，它就会根据公钥匹配你的私钥，当能够相互匹配时，才能够顺利的通过git上传你的文件到<code>GitHub</code>上。</p>
+</blockquote>
+<p>然后打开<a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>，在头像下面点击<code>settings</code>，再点击<code>SSH and GPG keys</code>，新建一个SSH，名字随便起。</p>
+<p>在<code>git bash</code>中输入:</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp">cat <span class="token operator">~</span><span class="token operator">/</span><span class="token punctuation">.</span>ssh<span class="token operator">/</span>id_rsa<span class="token punctuation">.</span>pub<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>将输出的内容复制到刚刚GitHub的SSH框中，点击确定保存。</p>
+<p>输入<code>ssh -T <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a></code>，如果出现你的用户名，那就成功了。</p>
+<h2 id="7-将hexo部署到GitHub"><a href="#7-将hexo部署到GitHub" class="headerlink" title="7.将hexo部署到GitHub"></a>7.将hexo部署到GitHub</h2><p>这一步，我们就可以将<code>hexo</code>和<code>GitHub</code>关联起来，也就是将hexo生成的文章部署到<code>GitHub</code>上，打开博客根目录下的<code>_config.yml</code>文件，这是博客的配置文件，在这里你可以修改与博客配置相关的各种信息。</p>
+<p>修改<code>repository</code>为你的仓库地址：</p>
+<pre class="line-numbers language-cpp"><code class="language-cpp">deploy<span class="token operator">:</span>
+  type<span class="token operator">:</span> git
+  repository<span class="token operator">:</span> https<span class="token operator">:</span><span class="token operator">/</span><span class="token operator">/</span>github<span class="token punctuation">.</span>com<span class="token operator">/</span>qingy<span class="token operator">-</span>xyp<span class="token operator">/</span>qingy<span class="token operator">-</span>xyp<span class="token punctuation">.</span>github<span class="token punctuation">.</span>io
+  branch<span class="token operator">:</span> master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+<p>以上全部完成以后就可以在<code>git bash</code>中<code>hexo g</code>生成静态文章，<code>hexo d</code>进行上传了！</p>
+<blockquote>
+<p>注意第一次部署的时候需要输入你的<code>username</code>和<code>password</code>。</p>
+</blockquote>
+<h2 id="8-写文章、发布文章"><a href="#8-写文章、发布文章" class="headerlink" title="8.写文章、发布文章"></a>8.写文章、发布文章</h2><p>首先在博客根目录下右键打开<code>git bash</code>，安装一个扩展<code>npm i hexo-deployer-git</code>。</p>
+<p>然后输入<code>hexo new post "文章名字"</code>，新建一篇文章。</p>
+<p>然后打开<code>\source_posts</code>的目录，可以发现下面多了一个<code>文件夹</code>和一个<code>.md</code>文件，一个用来存放你的图片等数据，另一个就是你的文章文件啦。</p>
+<p>使用<code>markdown</code>语法编写完文件后，根目录下输入<code>hexo g</code>生成静态网页，然后输入<code>hexo s</code>可以本地预览效果，最后输入<code>hexo d</code>上传到github上。这时打开你的github.io主页就能看到发布的文章啦。</p>
+<h2 id="9-绑定自己的域名"><a href="#9-绑定自己的域名" class="headerlink" title="9.绑定自己的域名"></a>9.绑定自己的域名</h2><p>现在默认的域名还是<code>xxx.github.io</code>，是不是很没有牌面？大家也都想替换成自己的域名，相信各位都会自己去注册商注册一个属于自己的域名，这里就不详细说明了，只需要在你的注册商官网添加两条<code>DNS</code>解析即可（A类型的<code>IP地址</code>可以通过<code>ping</code>获取，<code>CNAME</code>直接指向<code>yourname.github.io</code>即可)。</p>
+<p>然后打开你的github博客<code>项目</code>，点击<code>settings</code>，拉到下面<code>Custom domain</code>处，填上你自己的域名，保存：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="4.png" alt=""></p>
+<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="5.png" alt=""></p>
+<p>好了就先到这里吧。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -607,20 +833,48 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
             document.body.appendChild(img);
           });
       </script>
-                                </div>
-                    </div>
-                </div>
-                   
-                        
-        
-                        
-        
-                        
-        
-                        
-        
-                        
-                        <style>
+            </div>
+            <hr/>
+
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+            
+            
+            <div class="reprint1">
+                <p>
+                    <span class="reprint1-tip">
+                        <i class="fa fa-exclamation-circle"></i>&nbsp;&nbsp;转载请注明:
+                    </span>
+                    <a href="https://qingy.me" class="b-link-green">Qingy</a>
+                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
+                    <a href="/2020/04/20/article-title/" class="b-link-green">windown系统hexo+Github搭建教程及模板（小学生都能做出来）！</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
     .valine-card {
         margin: 1.5rem auto;
     }
@@ -917,10 +1171,258 @@ $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay
 //   }, 800)
 
 </script>
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/04/20/article-title/">
+                    <div class="card-image">
                         
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="windown系统hexo+Github搭建教程及模板（小学生都能做出来）！">
+                        
+                        <span class="card-title">windown系统hexo+Github搭建教程及模板（小学生都能做出来）！</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            阅读须知
+
+注意，这篇文章篇幅较长，主要针对新手，每一步很详细，所以可能会显得比较啰嗦，所以建议基础比较好小伙伴根据目录选择自己感兴趣的部分跳着看，不要文章没看，上来先喷一下！谢谢⊙o⊙。教程内容随意复制使用，引用的话请加一个参考链接，谢谢
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-20
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/网站建设与优化/" class="post-category" target="_blank">
+                                    网站建设与优化
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/" target="_blank">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                    <a href="/tags/github/" target="_blank">
+                        <span class="chip bg-color">github</span>
+                    </a>
+                    
+                    <a href="/tags/博客/" target="_blank">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                    <a href="/tags/coding/" target="_blank">
+                        <span class="chip bg-color">coding</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2020/04/18/hello-world/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        
+                        <span class="card-title">Hello World</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-04-18
+                            </span>
+                        <span class="publish-author">
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Qingy<br />'
+            + '作者: Qingy<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
     </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4, h5'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+    
+
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
         <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
