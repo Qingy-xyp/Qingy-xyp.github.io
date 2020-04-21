@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://qingy.me/duihua/index.html</loc>
+    
+    <lastmod>2020-04-21T05:45:05.236Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://qingy.me/galleries/index.html</loc>
+    
+    <lastmod>2020-04-21T05:22:03.694Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://qingy.me/2020/04/20/article-title/</loc>
     
     <lastmod>2020-04-21T03:40:16.552Z</lastmod>
@@ -30,21 +44,7 @@
   </url>
   
   <url>
-    <loc>https://qingy.me/AV/index.html</loc>
-    
-    <lastmod>2019-10-04T03:57:55.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://qingy.me/archives/index.html</loc>
-    
-    <lastmod>2019-10-04T03:57:55.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://qingy.me/404.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
     
@@ -58,14 +58,7 @@
   </url>
   
   <url>
-    <loc>https://qingy.me/galleries/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%874/index.html</loc>
-    
-    <lastmod>2019-10-04T03:57:55.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://qingy.me/tags/index.html</loc>
+    <loc>https://qingy.me/AV/index.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
     
@@ -79,14 +72,14 @@
   </url>
   
   <url>
-    <loc>https://qingy.me/galleries/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%873/index.html</loc>
+    <loc>https://qingy.me/404.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://qingy.me/galleries/index.html</loc>
+    <loc>https://qingy.me/tags/index.html</loc>
     
     <lastmod>2019-10-04T03:57:55.000Z</lastmod>
     
