@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qingy.me/"/>
-  <updated>2020-04-22T16:55:17.899Z</updated>
+  <updated>2020-04-22T17:33:13.160Z</updated>
   <id>https://qingy.me/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://qingy.me/2020/04/23/penetration-test/"/>
     <id>https://qingy.me/2020/04/23/penetration-test/</id>
     <published>2020-04-22T16:15:04.000Z</published>
-    <updated>2020-04-22T16:55:17.899Z</updated>
+    <updated>2020-04-22T17:33:13.160Z</updated>
     
     <summary type="html">
     
@@ -30,10 +30,10 @@
         
         
           &lt;blockquote&gt;
-&lt;p&gt;有人来找我叫我帮他&lt;code&gt;Getshell&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;call：有人来找我叫我帮他&lt;code&gt;Getshell&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src=&quot;1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;1-Getshell&quot;&gt;&lt;a href=&quot;#1-Getshell&quot;
+&lt;h2 id=&quot;1-Getshell&quot;&gt;&lt;a
         
       
     
@@ -54,6 +54,8 @@
     
       <category term="Getshell" scheme="https://qingy.me/tags/Getshell/"/>
     
+      <category term="内网渗透" scheme="https://qingy.me/tags/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/"/>
+    
   </entry>
   
   <entry>
@@ -61,7 +63,7 @@
     <link href="https://qingy.me/2020/04/22/ji-yi-pian-shi-yong-liu-liang-hui-su-fen-xi-wang-zhan-bei-e-yi-ru-qin-xing-wei/"/>
     <id>https://qingy.me/2020/04/22/ji-yi-pian-shi-yong-liu-liang-hui-su-fen-xi-wang-zhan-bei-e-yi-ru-qin-xing-wei/</id>
     <published>2020-04-22T13:39:21.000Z</published>
-    <updated>2020-04-22T14:04:42.947Z</updated>
+    <updated>2020-04-22T17:54:54.065Z</updated>
     
     <summary type="html">
     

