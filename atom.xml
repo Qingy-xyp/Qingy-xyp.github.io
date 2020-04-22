@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qingy.me/"/>
-  <updated>2020-04-22T14:04:42.947Z</updated>
+  <updated>2020-04-22T16:55:17.899Z</updated>
   <id>https://qingy.me/</id>
   
   <author>
@@ -15,6 +15,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一次从注入拿到系统权限+内网渗透</title>
+    <link href="https://qingy.me/2020/04/23/penetration-test/"/>
+    <id>https://qingy.me/2020/04/23/penetration-test/</id>
+    <published>2020-04-22T16:15:04.000Z</published>
+    <updated>2020-04-22T16:55:17.899Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;有人来找我叫我帮他&lt;code&gt;Getshell&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;1.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;1-Getshell&quot;&gt;&lt;a href=&quot;#1-Getshell&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="渗透测试" scheme="https://qingy.me/categories/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+    
+      <category term="渗透测试" scheme="https://qingy.me/tags/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95/"/>
+    
+      <category term="Web" scheme="https://qingy.me/tags/Web/"/>
+    
+      <category term="渗透入侵" scheme="https://qingy.me/tags/%E6%B8%97%E9%80%8F%E5%85%A5%E4%BE%B5/"/>
+    
+      <category term="注入" scheme="https://qingy.me/tags/%E6%B3%A8%E5%85%A5/"/>
+    
+      <category term="提权" scheme="https://qingy.me/tags/%E6%8F%90%E6%9D%83/"/>
+    
+      <category term="Getshell" scheme="https://qingy.me/tags/Getshell/"/>
+    
+  </entry>
   
   <entry>
     <title>记一篇使用流量回溯分析网站被恶意入侵行为</title>
