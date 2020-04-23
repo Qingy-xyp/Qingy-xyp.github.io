@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://qingy.me/"/>
-  <updated>2020-04-22T17:33:13.160Z</updated>
+  <updated>2020-04-23T04:34:05.010Z</updated>
   <id>https://qingy.me/</id>
   
   <author>
@@ -15,6 +15,138 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>数字签名-认证</title>
+    <link href="https://qingy.me/2020/04/23/shu-zi-qian-ming-ren-zheng/"/>
+    <id>https://qingy.me/2020/04/23/shu-zi-qian-ming-ren-zheng/</id>
+    <published>2020-04-23T04:24:02.000Z</published>
+    <updated>2020-04-23T04:34:05.010Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;待更新&quot;&gt;&lt;a href=&quot;#待更新&quot; class=&quot;headerlink&quot; title=&quot;待更新~&quot;&gt;&lt;/a&gt;待更新~&lt;/h2&gt;&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+      
+        
+      
+    
+    </summary>
+    
+      <category term="网络传输安全" scheme="https://qingy.me/categories/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="身份认证" scheme="https://qingy.me/tags/%E8%BA%AB%E4%BB%BD%E8%AE%A4%E8%AF%81/"/>
+    
+      <category term="数字签名" scheme="https://qingy.me/tags/%E6%95%B0%E5%AD%97%E7%AD%BE%E5%90%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>文件校验</title>
+    <link href="https://qingy.me/2020/04/23/wen-jian-xiao-yan/"/>
+    <id>https://qingy.me/2020/04/23/wen-jian-xiao-yan/</id>
+    <published>2020-04-23T04:23:47.000Z</published>
+    <updated>2020-04-23T04:34:16.753Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;待更新&quot;&gt;&lt;a href=&quot;#待更新&quot; class=&quot;headerlink&quot; title=&quot;待更新~&quot;&gt;&lt;/a&gt;待更新~&lt;/h2&gt;&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+      
+        
+      
+    
+    </summary>
+    
+      <category term="网络传输安全" scheme="https://qingy.me/categories/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="校验" scheme="https://qingy.me/tags/%E6%A0%A1%E9%AA%8C/"/>
+    
+      <category term="文件完整性" scheme="https://qingy.me/tags/%E6%96%87%E4%BB%B6%E5%AE%8C%E6%95%B4%E6%80%A7/"/>
+    
+      <category term="Md5" scheme="https://qingy.me/tags/Md5/"/>
+    
+      <category term="Sha" scheme="https://qingy.me/tags/Sha/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>IP pack 详解</title>
+    <link href="https://qingy.me/2020/04/23/ip-pack-xiang-jie/"/>
+    <id>https://qingy.me/2020/04/23/ip-pack-xiang-jie/</id>
+    <published>2020-04-23T03:13:58.000Z</published>
+    <updated>2020-04-23T04:26:44.819Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;IP数据包结构详解&quot;&gt;&lt;a href=&quot;#IP数据包结构详解&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="网络传输安全" scheme="https://qingy.me/categories/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="数据包结构" scheme="https://qingy.me/tags/%E6%95%B0%E6%8D%AE%E5%8C%85%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="TCP/IP" scheme="https://qingy.me/tags/TCP-IP/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>encryption</title>
+    <link href="https://qingy.me/2020/04/23/encryption/"/>
+    <id>https://qingy.me/2020/04/23/encryption/</id>
+    <published>2020-04-23T03:12:11.000Z</published>
+    <updated>2020-04-23T04:33:11.572Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;待更新&quot;&gt;&lt;a href=&quot;#待更新&quot; class=&quot;headerlink&quot; title=&quot;待更新~&quot;&gt;&lt;/a&gt;待更新~&lt;/h2&gt;&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+      
+        
+      
+    
+    </summary>
+    
+      <category term="网络传输安全" scheme="https://qingy.me/categories/%E7%BD%91%E7%BB%9C%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8/"/>
+    
+    
+      <category term="加密算法" scheme="https://qingy.me/tags/%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="对称加密" scheme="https://qingy.me/tags/%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86/"/>
+    
+      <category term="非对称加密" scheme="https://qingy.me/tags/%E9%9D%9E%E5%AF%B9%E7%A7%B0%E5%8A%A0%E5%AF%86/"/>
+    
+      <category term="生日碰撞" scheme="https://qingy.me/tags/%E7%94%9F%E6%97%A5%E7%A2%B0%E6%92%9E/"/>
+    
+      <category term="AES算法" scheme="https://qingy.me/tags/AES%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="DES算法" scheme="https://qingy.me/tags/DES%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="RSA算法" scheme="https://qingy.me/tags/RSA%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>一次从注入拿到系统权限+内网渗透</title>

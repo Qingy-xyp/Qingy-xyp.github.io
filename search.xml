@@ -4,6 +4,128 @@
   
     
     <entry>
+      <title>数字签名-认证</title>
+      <link href="/2020/04/23/shu-zi-qian-ming-ren-zheng/"/>
+      <url>/2020/04/23/shu-zi-qian-ming-ren-zheng/</url>
+      
+        <content type="html"><![CDATA[<h2 id="待更新"><a href="#待更新" class="headerlink" title="待更新~"></a>待更新~</h2><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络传输安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 身份认证 </tag>
+            
+            <tag> 数字签名 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>文件校验</title>
+      <link href="/2020/04/23/wen-jian-xiao-yan/"/>
+      <url>/2020/04/23/wen-jian-xiao-yan/</url>
+      
+        <content type="html"><![CDATA[<h2 id="待更新"><a href="#待更新" class="headerlink" title="待更新~"></a>待更新~</h2><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络传输安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 校验 </tag>
+            
+            <tag> 文件完整性 </tag>
+            
+            <tag> Md5 </tag>
+            
+            <tag> Sha </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>IP pack 详解</title>
+      <link href="/2020/04/23/ip-pack-xiang-jie/"/>
+      <url>/2020/04/23/ip-pack-xiang-jie/</url>
+      
+        <content type="html"><![CDATA[<h2 id="IP数据包结构详解"><a href="#IP数据包结构详解" class="headerlink" title="IP数据包结构详解"></a>IP数据包结构详解</h2><blockquote><p>如果你想对网络安全了解的更全面，而不是限制于Web层的冰山一角，那么<code>TCP/IP</code>是你必须要精通的！就从IP数据包结构说起吧，先了解最基本的IP数据包张什么样子，才能知道其工作原理与漏洞。</p></blockquote><p>IP报文是在网络层传输的数据单元，也叫IP数据报。IP报文格式如下图：</p><p><img src="1.png" alt=""></p><ul><li>版本：</li></ul><p>IP协议的版本，目前的<code>IPV4</code>,以后会是<code>IPV6</code>。</p><ul><li>首部长度：</li></ul><p>IP报头的长度。固定部分的长度（<code>20字节</code>）和可变部分的长度之和。共占<code>4</code>位。最大为<code>1111</code>，即<code>10进制</code>的<code>15</code>，代表IP报头的最大长度可以为15个<code>32bits</code>（4字节），也就是最长可为<code>15*4=60</code>字节，除去固定部分的长度20字节，可变部分的长度最大为40字节。也就是IP数据包最小为<code>20字节</code>，最大为<code>60字节</code>。</p><ul><li>服务类型：</li></ul><p>这个一般没什么用，因为你就算选了也没效果，只有在<code>QOS</code>或其他特殊情况下才会使用到。</p><ul><li>总长度：</li></ul><p>用来记录IP报文的总长度。报头的长度和数据部分的长度之和。</p><ul><li>标识：</li></ul><p>唯一的标识主机发送的每一分数据报。通常每发送一个报文，它的值加一。当IP报文长度超过传输网络的MTU（最大传输单元）时必须分片，这个标识字段的值被复制到所有数据分片的标识字段中，使得这些分片在达到最终目的地时可以依照标识字段的内容重新组成原先的数据。（说白了就算用来排序的）</p><ul><li>标志：</li></ul><p>共3位。R、DF、MF三位。目前只有后两位有效，<code>DF</code>位：为1表示不分片，为0表示分片。<code>MF</code>：为1表示“还有更多的片”，为0表示这是最后一片。</p><ul><li>片位移：</li></ul><p>本分片在原先数据报文中相对首位的偏移位。（也就是用来IP分片最后排序组合的）</p><ul><li>生存时间：</li></ul><p>IP报文所允许通过的路由器的最大数量。每经过一个路由器，TTL减1，当为0时，路由器将该数据报丢弃。TTL 字段是由发送端初始设置一个 8 bit字段.推荐的初始值由分配数字 <code>RFC</code> 指定，当前值为 64。发送 <code>ICMP</code> 回显应答时经常把 TTL 设为最大值 255。(注意：Linux和Windows不一样)</p><ul><li>协议：</li></ul><p>指出IP报文携带的数据使用的是那种协议，以便目的主机的IP层能知道要将数据报上交到哪个进程（不同的协议有专门不同的进程处理）。和端口号类似，此处采用协议号，<code>TCP</code>的协议号为6，<code>UDP</code>的协议号为17。<code>ICMP</code>的协议号为1，<code>IGMP</code>的协议号为2.</p><ul><li>首部校验和：</li></ul><p>计算IP头部的校验和，检查IP报头的完整性。</p><ul><li>源IP地址：</li></ul><p>这个如果不知道的话，请出门左转，去打游戏吧。</p><ul><li>目的IP地址：</li></ul><p>这个如果不知道的话，请出门右转，<code>影视VIP</code>-<a href="http://qingy.vip/" target="_blank" rel="noopener">传送门</a></p><blockquote><p>以上这个东西很简单吧，只有了解数据包结构，才能了解其工作原理。</p></blockquote><blockquote><p>再此想问大家三个问题：</p></blockquote><p><b>广域网存在各种安全隐患</b></p><p>1、如何避免网上传输的数据有被窃听的风险？<br>              <a href="https://qingy.me/encryption">传送门</a><br>2、如何避免网上传输的数据有被篡改的危险？<br>              <a href="https://qingy.me/wen-jian-xiao-yan/">传送门</a><br>3、如何避免通信双方有被冒充的风险？<br>              <a href="https://qingy.me/shu-zi-qian-ming-ren-zheng/">传送门</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络传输安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据包结构 </tag>
+            
+            <tag> TCP/IP </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>encryption</title>
+      <link href="/2020/04/23/encryption/"/>
+      <url>/2020/04/23/encryption/</url>
+      
+        <content type="html"><![CDATA[<h2 id="待更新"><a href="#待更新" class="headerlink" title="待更新~"></a>待更新~</h2><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 网络传输安全 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 加密算法 </tag>
+            
+            <tag> 对称加密 </tag>
+            
+            <tag> 非对称加密 </tag>
+            
+            <tag> 生日碰撞 </tag>
+            
+            <tag> AES算法 </tag>
+            
+            <tag> DES算法 </tag>
+            
+            <tag> RSA算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一次从注入拿到系统权限+内网渗透</title>
       <link href="/2020/04/23/penetration-test/"/>
       <url>/2020/04/23/penetration-test/</url>
